@@ -96,7 +96,7 @@ public class TV {
 	//cambio de canal y cambio de volumen
 	public void canalUp() {
 		if (estado==true) {
-			if (getCanal()>=1 && getCanal()<=119) {
+			if (canal>=1 && canal<=119) {
 				canal++;
 				
 			}
