@@ -7,7 +7,7 @@ public class TV {
 	private boolean estado;
 	private int volumen=1;
 	private Control control;
-	public static int numTV; 
+	static int numTV; 
 	
 	//constructor
 	public TV(Marca marca, boolean estado) {
@@ -35,8 +35,8 @@ public class TV {
 	}
 	
 	//Get y Set para precio
-	public void setPrecio(int prec) {
-		this.precio=prec;
+	public void setPrecio(int precio) {
+		this.precio=precio;
 	}
 	
 	public int getPrecio() {
@@ -44,9 +44,9 @@ public class TV {
 	}
 	
 	//Get y Set para volumen
-	public  void setVolumen(int vol) {
-		if ((estado=true) && (vol>=0 && vol<=7)) {
-			volumen=vol;
+	public  void setVolumen(int volumen) {
+		if ((estado==true) && (volumen>=0 && volumen<=7)) {
+			this.volumen=volumen;
 		}
 		
 	}
@@ -105,7 +105,7 @@ public class TV {
 
 	public void canalDown() {
 		if (estado==true) {
-			if (getCanal()>=2 && getCanal()<=120) {
+			if (canal>=2 && canal<=120) {
 				canal--;
 				
 			}
@@ -115,7 +115,7 @@ public class TV {
 	
 	public void volumenUp() {
 		if (estado==true) {
-			if (getVolumen()>=0 && getVolumen()<=6) {
+			if (volumen>=0 && volumen<=6) {
 				volumen++;
 				
 			}
@@ -124,7 +124,7 @@ public class TV {
 	
 	public void volumenDown() {
 		if (estado==true) {
-			if (getVolumen()>=1 && getVolumen()<=7) {
+			if (volumen>=1 && volumen<=7) {
 				volumen--;	
 			}
 		}
