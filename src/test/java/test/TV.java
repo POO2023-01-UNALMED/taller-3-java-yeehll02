@@ -35,7 +35,7 @@ public class TV {
 	
 	//Get y Set para precio
 	public void setPrecio(int prec) {
-		precio=prec;
+		this.precio=prec;
 	}
 	
 	public int getPrecio() {
@@ -67,20 +67,20 @@ public class TV {
 		return canal;
 	}
 	
-	public static int getNumeroTV() {
-		return numTV;
+	public static void getNumeroTV(int numTV) {
+		TV.numTV=numTV;
 	}
 	
 	
 	
 	public boolean turnOn() {
-		estado=true;
+		this.estado=true;
 		return estado;
 		
 	}
 	
 	public boolean turnOff() {
-		estado=false;
+		this.estado=false;
 		return estado;
 		
 	}
