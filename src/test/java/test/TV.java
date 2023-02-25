@@ -68,21 +68,23 @@ public class TV {
 		return canal;
 	}
 	
-	public static void getNumeroTV(int numTV) {
+	public static void setNumeroTV(int numTV) {
 		TV.numTV=numTV;
+	}
+	public static int getNumeroTV() {
+		return numTV;
 	}
 	
 	
-	
-	public boolean turnOn() {
+	public void turnOn() {
 		this.estado=true;
-		return estado;
+		
 		
 	}
 	
-	public boolean turnOff() {
+	public void turnOff() {
 		this.estado=false;
-		return estado;
+		
 		
 	}
 	
@@ -113,7 +115,7 @@ public class TV {
 	
 	public void volumenUp() {
 		if (estado==true) {
-			if (getVolumen()>=1 && getVolumen()<=119) {
+			if (getVolumen()>=0 && getVolumen()<=6) {
 				volumen++;
 				
 			}
