@@ -56,10 +56,10 @@ public class TV {
 	}
 
 	//Get y Set para canal
-	public void setCanal(int can) {
+	public void setCanal(int canal) {
 		if (estado==true){
-			if ((can>=1) && (can<=120)) {
-			this.canal=can;
+			if ((canal>=1) && (canal<=120)) {
+			this.canal=canal;
 		}
 		}
 	}
@@ -68,10 +68,10 @@ public class TV {
 		return canal;
 	}
 	
-	public static void setNumeroTV(int numTV) {
+	public static void setNumTV(int numTV) {
 		TV.numTV=numTV;
 	}
-	public static int getNumeroTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	
